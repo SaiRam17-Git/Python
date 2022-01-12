@@ -1,0 +1,80 @@
+#Preparing a LIST:
+list = ["Python","Jupyter","Anaconda"]    #making a list and entering the data into list
+print(list)                               #calling the list
+list                                      # Here we can directly call the list with using PRINT
+
+#Accessing Elements in a list
+list = ["Python","Jupyter","Anaconda"]
+print(list[0])                           #accessing the first element of a list
+
+#Accessing Elements in a list
+list = ["Python","Jupyter","Anaconda"]
+print(list[2])                          #here the index position of a list starts with "0" but not with "1"
+
+
+
+#Manipulation of al list MODIFYING ,ADDING AND REMOVING Elements:
+
+list = ["Python","Jupyter","Anaconda"]
+print(list)
+
+#Modifying the list
+list[0] = "Pcharms"                     #Here we are changing the 1st element of the list by using the index number
+print(list)
+
+#Adding the list
+list.append("Eclipse")                 #Here an element has been added to the list
+print(list)                                   
+
+#Removing the list
+del list[0]                            #Here the element of index position "0" has been deleted 
+print(list)
+
+#Inserting an element in a list
+list.insert(0,"IDE")                   #Here we are inserting an element in a list at a particular index using the number
+print(list)                            # List_Name.insert(Index_number, "Element")
+
+
+
+#Removing elements SPECIAL CASES
+
+#Removing elements using POP()
+list = ["Python","Jupyter","Anaconda","IDE"]
+list.pop(0)                           #Here using POP along with the index number in the brackets
+print(list)
+
+
+#Removing element using the value
+list = ["Python","Jupyter","Anaconda","IDE"]
+list.remove("Jupyter")
+print(list)
+
+'''The remove() method deletes only the first occurrence of the value you specify. If there’s 
+ a possibility the value appears more than once in the list, you’ll need to use a loop 
+ to make sure all occurrences of the value are removed.'''
+
+
+#Organising a list using sort()
+'''Python’s sort() method makes it relatively easy to sort a list. Imagine we 
+have a list of cars and want to change the order of the list to store them 
+alphabetically'''
+
+l1 = ["Charlie","John","Kile","Emma"]
+l1.sort()                               #By using sort() here we can arange the elements in an alphabetical order.
+print(l1)
+
+
+#Reverse order
+l1 = ["Charlie","John","Kile","Emma"]
+l1.sort(reverse=True)                   #Here we got the ouput repsonse in reverse order using BOOLEAN
+print(l1)
+
+
+#Sorting using sorted() function
+l1 = ["Charlie","John","Kile","Emma"]
+print(sorted(l1))                       #Directly we can print the sorted list using 'sorted(List_Name)'
+
+#Reverse order of a list without any sorting method
+l1 = ["Charlie","John","Kile","Emma"]
+l1.reverse()                           #we can get the output as in descending order
+print(l1)
