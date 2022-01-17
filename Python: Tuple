@@ -1,0 +1,30 @@
+#Defining a Tuple
+'''Tuples are immutable lists i.e, they cannot change and we indicate then b'''
+
+Dimension = (50,75)
+print(Dimension[0])
+print(Dimension[1])
+
+
+'''NOTE:Tuples are technically defined by the presence of a comma; the parentheses make them 
+look neater and more readable. If you want to define a tuple with one element, you 
+need to include a trailing comma:'''
+
+my_t = (3,)
+my_t
+
+
+#Looping Through All Values in a Tuple
+
+Dimensions = (50,75)
+for Dimension in Dimensions:
+    print(Dimension)                       #Here we got the individual output of a tuple uisng loop
+    
+    
+
+#Tuples are immutable 
+
+my_t = ("Alice","Bonnie","Elena")
+print(my_t)                             #Here we can the output wihtout any error
+my_t[0] = ("Caroline")                  #Here we tried to change the tuple with the index value
+print(my_t)                             #Here by printing the output we get the error
