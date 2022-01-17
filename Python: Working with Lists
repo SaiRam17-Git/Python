@@ -1,0 +1,50 @@
+#Looping Through an Entire List
+
+Names = ["Alice","Bonnie","Elena","Caroline"]
+for name in Names:
+    print(name)                                 #Here for every the loop goes on we get an output
+    
+    
+    
+#Doing something more with Lists
+
+magicians = ['alice', 'david', 'carolina'] 
+for magician in magicians: 
+    print(f"{magician.title()}, that was a great trick!") 
+    
+
+
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(f"{magician.title()}, that was a great trick!")
+print(f"I can't wait to see your next trick, {magician.title()}.\n")
+
+
+
+#Making Numerical Lists
+
+for i in range(1,6):
+    print(i)                              #Here we are printing the numbers using loop
+    
+#Using Range() fun for making numerical Lists
+
+numbers = list(range(1,6))
+print(numbers)
+
+
+
+#List Comprehensions
+
+List = [i**2 for i in range(1,5)]
+List
+
+odd_num = list(range(1,20,2))
+for i in odd_num:
+    print(i)
+    
+Ans = []    
+for i in range(3,31):
+    if i%3 == 0:
+        Ans.append(i)   
+        
+print(Ans)
